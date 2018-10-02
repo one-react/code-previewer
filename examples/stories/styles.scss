@@ -1,0 +1,43 @@
+.or-btn {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+// styles for code previewer
+.code-previewer {
+  position: relative;
+
+  &-title {
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+  }
+
+  .copy-btn {
+    position: absolute;
+    top: 75px;
+    right: 10px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 13px;
+    align-self: flex-start;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(238, 238, 238);
+    border-image: initial;
+    border-radius: 3px;
+    padding: 3px 10px;
+
+    &-text {
+      height: 16px;
+      transform: translateY(-100%) translateY(-6px);
+      transition: transform .2s ease;
+    }
+
+    &-copied {
+      transform: translateY(0);
+    }
+  }
+}
