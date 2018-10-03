@@ -3,7 +3,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "or-sample": [
+      "or-code-previewer": [
         "../src"
       ]
     }

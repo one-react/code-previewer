@@ -1,2 +1,2 @@
 import './styles.scss'
-export { Sample as default } from './Sample'
+export { CodePreviewer as default } from './CodePreviewer'

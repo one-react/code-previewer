@@ -65,7 +65,9 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
-    "or-theme": "^1.2.0"
+    "or-theme": "^1.2.0",
+    "react-copy-to-clipboard": "^5.0.1",
+    "react-highlight": "^0.12.0"
   },
   "peerDependencies": {
     "react": ">=15.5"

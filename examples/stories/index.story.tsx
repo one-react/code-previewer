@@ -3,19 +3,18 @@ import { withInfo } from '@storybook/addon-info'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
-import Sample from 'or-code-previewer'
+import CodePreviewer from 'or-code-previewer'
 import { previewCode } from './util'
 
 import Example from './example'
 
 import './styles.scss'
 
-const handleClick = action('basic-click')
 storiesOf('or-sample', module)
   .addDecorator(
     withInfo({
       inline: true,
-      propTables: [Sample],
+      propTables: [CodePreviewer],
       propTablesExclude: [Example],
       styles: {
         jsxInfoContent: {
@@ -25,7 +24,11 @@ storiesOf('or-sample', module)
       }
     })
   )
-  .add('basic', () => <Sample onClick={handleClick}>Test</Sample>)
+  .add('basic', () => <CodePreviewer title="hello" lang="html" code={require('!!raw-loader!./test.html')} />, {
+    info: {
+      source: false
+    }
+  })
   .add('sample', () => <Example />, {
     info: {
       source: false,

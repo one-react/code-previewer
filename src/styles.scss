@@ -1,45 +1,40 @@
 @import "~or-theme";
 
-.or-btn {
-  display: inline-block;
-  min-width: 120px;
-  padding: $btn-padding-y $btn-padding-x;
-  background-color: $white;
-  color: $gray8;
-  border-width: 1px;
-  border-color: $gray8;
-  border-style: solid;
-  font-size: 14px;
-  border-radius: 1px;
-  text-align: center;
-  box-sizing: border-box;
-  font-family: $font-family;
-  cursor: pointer;
+// styles for code previewer
+.or-code-previewer {
+  position: relative;
 
-  &:hover {
-    background-color: $gray8;
-    color: $white;
+  &-title {
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(238, 238, 238);
   }
-}
 
-.or-btn-primary {
-  background-color: $primary-color;
-  color: $white;
-  border-color: $primary-color;
+  .copy-btn {
+    position: absolute;
+    top: 75px;
+    right: 10px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 13px;
+    align-self: flex-start;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(238, 238, 238);
+    border-image: initial;
+    border-radius: 3px;
+    padding: 3px 10px;
 
-  &:hover {
-    background-color: $primary-color0;
-    border-color: $primary-color0;
-  }
-}
+    &-text {
+      height: 16px;
+      transform: translateY(-100%) translateY(-6px);
+      transition: transform .2s ease;
+    }
 
-.or-btn-warning {
-  background-color: $warning-color;
-  color: $white;
-  border-color: $warning-color;
-
-  &:hover {
-    background-color: $warning-color0;
-    border-color: $warning-color0;
+    &-copied {
+      transform: translateY(0);
+    }
   }
 }
