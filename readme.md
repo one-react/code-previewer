@@ -10,7 +10,10 @@
 [![Chat](https://img.shields.io/gitter/room/one-react-org/Lobby.svg)](https://gitter.im/one-react-org/Lobby)
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-[![Greenkeeper badge](https://badges.greenkeeper.io/one-react/code-previewer.svg)](https://greenkeeper.io/) 
+[![Greenkeeper badge](https://badges.greenkeeper.io/one-react/code-previewer.svg)](https://greenkeeper.io/)
+
+## Inspired by `@storybook/addon-info`
+* and styles/views are similar with `@storybook/addon-info`
 
 ## Installation
 ```
