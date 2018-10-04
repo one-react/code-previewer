@@ -13,7 +13,7 @@
 [![Greenkeeper badge](https://badges.greenkeeper.io/one-react/code-previewer.svg)](https://greenkeeper.io/)
 
 ## Inspired by `@storybook/addon-info`
-* and styles/views look like the same of `@storybook/addon-info`
+* and styles/views are similar with `@storybook/addon-info`
 
 ## Installation
 ```
