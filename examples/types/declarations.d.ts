@@ -6,12 +6,15 @@ import * as React from 'react'
 import { Options } from '@storybook/addon-info'
 
 declare module '@storybook/react' {
+  interface ExtOptions extends Options {
+    text?: string | React.ReactNode
+  }
   export interface Story {
     readonly kind: string
     add(
       storyName: string,
       callback: RenderFunction,
-      options?: { info: Options & { text?: string | React.ReactNode } }
+      options?: { info: ExtOptions }
     ): this
     addDecorator(decorator: StoryDecorator): this
   }
